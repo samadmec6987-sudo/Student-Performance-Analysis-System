@@ -1,0 +1,43 @@
+{% extends 'base.html' %}
+{% block title %}Home · Student Performance Analysis{% endblock %}
+{% block content %}
+<section class="landing-hero">
+  <div class="landing-copy">
+    <p class="eyebrow">SMART ACADEMIC INSIGHTS</p>
+    <h1>Understand performance.<br><span>Improve every result.</span></h1>
+    <p class="landing-description">A simple student performance analysis system to organize marks, compare subjects and turn academic data into clear insights.</p>
+    <div class="landing-actions">
+      <a class="button landing-button" href="/dashboard">Explore Dashboard <span>→</span></a>
+      <a class="landing-secondary" href="/analysis">View Analysis</a>
+    </div>
+    <div class="landing-proof"><span class="proof-dot"></span> Built with Python, Flask, Pandas and Matplotlib</div>
+  </div>
+  <div class="landing-visual">
+    <div class="visual-glow"></div>
+    <div class="preview-card">
+      <div class="preview-top"><div><span class="preview-label">PERFORMANCE OVERVIEW</span><h3>Class snapshot</h3></div><span class="preview-icon">↗</span></div>
+      <div class="preview-metrics">
+        <div><small>Class average</small><strong>76.3%</strong><em>Across 3 subjects</em></div>
+        <div class="mini-chart"><i style="height:42%"></i><i style="height:65%"></i><i style="height:52%"></i><i style="height:82%"></i><i style="height:70%"></i><i style="height:96%"></i><i style="height:76%"></i></div>
+      </div>
+      <div class="preview-divider"></div>
+      <div class="subject-row"><span><b class="subject-dot python-dot"></b>Python</span><strong>70%</strong><div class="progress"><i style="width:70%"></i></div></div>
+      <div class="subject-row"><span><b class="subject-dot java-dot"></b>Java</span><strong>73%</strong><div class="progress"><i style="width:73%"></i></div></div>
+      <div class="subject-row"><span><b class="subject-dot sql-dot"></b>SQL</span><strong>75%</strong><div class="progress"><i style="width:75%"></i></div></div>
+      <div class="preview-footer"><span class="footer-check">✓</span> Data made easier to understand</div>
+    </div>
+    <div class="floating-note"><span>✦</span><div><b>Clear insights</b><small>All in one place</small></div></div>
+  </div>
+</section>
+
+<section class="landing-features">
+  <div class="section-heading"><p class="eyebrow">WHAT YOU CAN DO</p><h2>Everything you need to read the results</h2><p>Manage student records and explore useful academic insights from one place.</p></div>
+  <div class="feature-grid">
+    <article class="feature-card"><div class="feature-icon purple">▦</div><h3>Student Records</h3><p>Add, update, search and manage student marks with ease.</p></article>
+    <article class="feature-card"><div class="feature-icon blue">⌁</div><h3>Data Analysis</h3><p>Calculate averages, percentages, grades and pass results using Pandas.</p></article>
+    <article class="feature-card"><div class="feature-icon green">▥</div><h3>Visual Reports</h3><p>Understand subject averages and student performance through charts.</p></article>
+    <article class="feature-card"><div class="feature-icon orange">⇩</div><h3>Export Results</h3><p>Download the student performance report as a CSV file.</p></article>
+  </div>
+</section>
+<section class="landing-cta"><div><p class="eyebrow">READY TO GET STARTED?</p><h2>Explore your student performance dashboard.</h2><p>See the records, compare results and discover the class insights.</p></div><a class="button landing-button" href="/dashboard">Open Dashboard →</a></section>
+{% endblock %}

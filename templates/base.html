@@ -1,0 +1,5 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>{% block title %}Student Performance Analysis{% endblock %}</title><link rel="stylesheet" href="{{ url_for('static',filename='style.css') }}"></head>
+<body><header class="topbar"><a class="brand" href="/">🎓 Student Performance Analysis</a><nav><a href="/">Home</a><a href="/dashboard">Dashboard</a><a href="/students">Students</a><a href="/analysis">Analysis</a><a class="navbutton" href="/add">+ Add Student</a><a href="/logout">Logout</a></nav></header><main class="container">
+{% with messages = get_flashed_messages(with_categories=true) %}{% if messages %}{% for category,message in messages %}<div class="alert {{category}}">{{message}}</div>{% endfor %}{% endif %}{% endwith %}
+{% block content %}{% endblock %}</main><footer>Student Performance Analysis System · Built with Python, Flask and Pandas</footer></body></html>
